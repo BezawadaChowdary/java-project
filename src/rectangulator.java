@@ -1,15 +1,13 @@
-public class rectangulator
-{
-	public static void main(string[] args)
-	{
-		int length = Integer.parseInt(args[0]);
-		int width = Integer.parseInt(args[1]);
+public class Rectangulator {
+  public static void main(String[] args) {
+    int length = Integer.parseInt(args[0]);
+    int width = Integer.parseInt(args[1]);
 
-		rectangle myrectangle = new rectangle(length, width);
+    Rectangle myRectangle = new Rectangle(length, width);
 
-		string output = string.format("***length: %d \n width: %d \n area: %d \n preimeter: %d")
-				system.out.println(output);
+    String output = String.format("*** Your Rectangle ***\n\nLength: %d\nWidth: %d\nArea: %d\nPerimeter: %d\n\n", myRectangle.length, myRectangle.width, myRectangle.getArea(), myRectangle.getPerimeter());
 
-
+    System.out.println(output);
+  }
 }
 
